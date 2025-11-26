@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDL Abreu e Lima - Câmara de Dirigentes Lojistas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#home">CDL Abreu e Lima</a>
+                </div>
+
+                <!-- Menu Desktop -->
+                <nav class="nav-menu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#solucoes" class="nav-link">Soluções</a>
+                    <a href="#noticias" class="nav-link">Notícias</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                    
+                    <!-- Dropdown Serviços -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Serviços</button>
+                        <div class="dropdown-menu">
+                        
+                            <a href="#spc">Consulta SPC</a>
+                            <a href="#cct">CCT</a>
+                            <a href="#plano-saude">Plano de Saúde</a>
+                            <a href="#certificado">Certificado Digital</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- CTA Button Desktop -->
+                <button class="btn btn-primary">Fale Conosco</button>
+
+                <!-- Menu Mobile Toggle -->
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile" id="navMobile">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#solucoes" class="nav-link">Soluções</a>
+                <a href="#noticias" class="nav-link">Notícias</a>
+                <a href="#contato" class="nav-link">Contato</a>
+                
+                <!-- Dropdown Mobile -->
+                <div class="dropdown-mobile">
+                    <button class="dropdown-btn-mobile" id="dropdownToggle">Serviços</button>
+                    <div class="dropdown-menu-mobile" id="dropdownMenu">
+                        <a href="#serasa">Consulta Serasa</a>
+                        <a href="#spc">Consulta SPC</a>
+                        <a href="#cct">CCT</a>
+                        <a href="#plano-saude">Plano de Saúde</a>
+                        <a href="#certificado">Certificado Digital</a>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-block">Fale Conosco</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner com Carrossel -->
+    <section id="home" class="carousel-section">
+        <div class="carousel">
+            <div class="carousel-slides">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background-image: url('img/placeholder-banner-1.jpg')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Impulsionando o Crescimento do Seu Negócio</h1>
+                        <p>Soluções inovadoras e estratégicas para empresas que desejam se destacar no mercado.</p>
+                        <a href="#solucoes" class="btn btn-light">Conheça Nossas Soluções</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('img/placeholder-banner-2.jpg')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Transformação Digital para sua Empresa</h1>
+                        <p>Modernize suas operações com tecnologia de ponta e processos otimizados.</p>
+                        <a href="#solucoes" class="btn btn-light">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide" style="background-image: url('img/placeholder-banner-3.jpg')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Associe-se à CDL Abreu e Lima Agora</h1>
+                        <p>Faça parte de uma comunidade de líderes empresariais e acesse benefícios exclusivos.</p>
+                        <a href="#associacao" class="btn btn-light">Associar-se</a>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide" style="background-image: url('img/placeholder-banner-4.jpg')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1>Segurança Digital para seu Negócio</h1>
+                        <p>Certificado digital e conformidade regulatória para proteger sua empresa.</p>
+                        <a href="#certificado" class="btn btn-light">Conhecer Serviços</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles do Carrossel -->
+            <button class="carousel-btn carousel-prev" id="prevBtn" aria-label="Slide anterior">❮</button>
+            <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Próximo slide">❯</button>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0"></button>
+                <button class="indicator" data-slide="1"></button>
+                <button class="indicator" data-slide="2"></button>
+                <button class="indicator" data-slide="3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="quem-somos" class="about">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A CDL Abreu e Lima</h3>
+                    <p>A Câmara de Dirigentes Lojistas (CDL) de Abreu e Lima é uma organização dedicada ao fortalecimento do comércio local e ao desenvolvimento econômico do município. Desde sua fundação, atuamos como intermediária entre o setor comercial, a comunidade e as autoridades públicas.</p>
+                    
+                    <h4>Nossa Missão</h4>
+                    <p>Fortalecer o comércio local através de soluções estratégicas, parcerias e representação dos interesses dos lojistas junto aos órgãos públicos.</p>
+                    
+                    <h4>Nossa Visão</h4>
+                    <p>Ser a principal referência em apoio ao comércio de Abreu e Lima, promovendo crescimento sustentável e prosperidade econômica.</p>
+                    
+                    <h4>Nossos Valores</h4>
+                    <ul>
+                        <li><strong>Integridade:</strong> Agir com ética e transparência em todas as ações</li>
+                        <li><strong>Comprometimento:</strong> Dedicação total ao desenvolvimento do comércio local</li>
+                        <li><strong>Inovação:</strong> Buscar constantemente novas soluções e oportunidades</li>
+                        <li><strong>Colaboração:</strong> Trabalhar em conjunto com parceiros e associados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Presidente -->
+    <section id="presidente" class="president">
+        <div class="container">
+            <h2>Presidente</h2>
+            <div class="president-card">
+                <div class="president-info">
+                    <h3>Evandro Alves de Lima</h3>
+                    <p class="position">Presidente da CDL Abreu e Lima</p>
+                    <p class="bio">Evandro Alves de Lima é um empresário experiente e dedicado ao desenvolvimento do comércio local. Com uma trajetória de sucesso no setor, lidera a CDL com visão estratégica e comprometimento com os associados.</p>
+                    <div class="contact-cta">
+                        <p>Entre em contato para agendar uma reunião</p>
+                        <a href="#contato" class="btn btn-primary">Fale com o Presidente</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Benefícios -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2>Benefícios de Ser Associado</h2>
+            <p class="section-subtitle">Conheça as vantagens exclusivas de fazer parte da CDL Abreu e Lima.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Networking</h3>
+                    <p>Conexão com outros empresários e oportunidades de parcerias estratégicas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📚</div>
+                    <h3>Capacitação</h3>
+                    <p>Acesso a cursos, treinamentos e palestras sobre gestão e inovação.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💼</div>
+                    <h3>Representação</h3>
+                    <p>Defesa de seus interesses junto aos órgãos públicos e entidades.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Descontos</h3>
+                    <p>Acesso a descontos em serviços e produtos de parceiros.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏥</div>
+                    <h3>Plano de Saúde</h3>
+                    <p>Plano de saúde especial para associados e suas famílias.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📰</div>
+                    <h3>Informações</h3>
+                    <p>Acesso a informações sobre legislação, mercado e oportunidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Soluções -->
+    <section id="solucoes" class="solutions">
+        <div class="container">
+            <h2>Nossas Soluções</h2>
+            <p class="section-subtitle">Oferecemos um portfólio completo de serviços para impulsionar o crescimento e a sustentabilidade do seu negócio.</p>
+
+            <div class="solutions-grid">
+                <!-- Card 1 -->
+                <div class="solution-card">
+                    <div class="solution-icon">📊</div>
+                    <h3>Consultoria Empresarial</h3>
+                    <p>Orientação estratégica para otimizar processos e aumentar a rentabilidade do seu negócio.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="solution-card">
+                    <div class="solution-icon">📈</div>
+                    <h3>Desenvolvimento de Mercado</h3>
+                    <p>Estratégias de expansão e posicionamento para conquistar novos mercados.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="solution-card">
+                    <div class="solution-icon">👥</div>
+                    <h3>Gestão de Pessoas</h3>
+                    <p>Programas de desenvolvimento e retenção de talentos para sua equipe.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="solution-card">
+                    <div class="solution-icon">💻</div>
+                    <h3>Transformação Digital</h3>
+                    <p>Implementação de tecnologias para modernizar e automatizar operações.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="solution-card">
+                    <div class="solution-icon">📉</div>
+                    <h3>Análise de Dados</h3>
+                    <p>Insights baseados em dados para tomadas de decisão mais assertivas.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="solution-card">
+                    <div class="solution-icon">🔒</div>
+                    <h3>Conformidade e Segurança</h3>
+                    <p>Garantia de conformidade regulatória e proteção dos dados da empresa.</p>
+                    <a href="#" class="link">Saiba Mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Notícias -->
+    <section id="noticias" class="news">
+        <div class="container">
+            <h2>Notícias e Artigos</h2>
+            <p class="section-subtitle">Fique atualizado com as últimas novidades, tendências e insights do mercado.</p>
+
+            <div class="news-grid">
+                <!-- Card 1 -->
+                <div class="news-card">
+                    <img src="img/placeholder-news-1.jpg" alt="Tendências de Inovação para 2025">
+                    <div class="news-content">
+                        <span class="news-date">21 de novembro de 2025</span>
+                        <h3>Tendências de Inovação para 2025</h3>
+                        <p>Descubra as principais tendências tecnológicas que vão transformar o mercado nos próximos anos.</p>
+                        <a href="#" class="btn btn-small">Ler Mais</a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="news-card">
+                    <img src="img/placeholder-news-2.jpg" alt="Sustentabilidade nos Negócios">
+                    <div class="news-content">
+                        <span class="news-date">18 de novembro de 2025</span>
+                        <h3>Sustentabilidade nos Negócios</h3>
+                        <p>Como implementar práticas sustentáveis e gerar impacto positivo na sua organização.</p>
+                        <a href="#" class="btn btn-small">Ler Mais</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="news-card">
+                    <img src="img/placeholder-news-3.jpg" alt="Transformação Digital: Guia Prático">
+                    <div class="news-content">
+                        <span class="news-date">15 de novembro de 2025</span>
+                        <h3>Transformação Digital: Guia Prático</h3>
+                        <p>Passo a passo para modernizar sua empresa e acompanhar a evolução do mercado.</p>
+                        <a href="#" class="btn btn-small">Ler Mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-cta">
+                <a href="#" class="btn btn-primary">Ver Todas as Notícias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Parceiros -->
+    <section id="parceiros" class="partners">
+        <div class="container">
+            <h2>Nossos Parceiros</h2>
+            <p class="section-subtitle">Confiamos em parcerias estratégicas com empresas líderes para oferecer as melhores soluções.</p>
+
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-1.png" alt="Parceiro 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-2.png" alt="Parceiro 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-3.png" alt="Parceiro 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-4.png" alt="Parceiro 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-5.png" alt="Parceiro 5">
+                </div>
+                <div class="partner-logo">
+                    <img src="img/placeholder-partner-6.png" alt="Parceiro 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Consulta SPC -->
+    <section id="spc" class="spc">
+        <div class="container">
+            <h2>Consulta SPC</h2>
+            <p class="section-subtitle">Acesse o sistema de consulta SPC para verificar informações sobre empresas e pessoas.</p>
+
+            <div class="spc-grid">
+                <div class="spc-card">
+                    <div class="spc-icon">🔍</div>
+                    <h3>Consulta Rápida</h3>
+                    <p>Verifique informações de forma rápida e segura no sistema SPC.</p>
+                </div>
+                <div class="spc-card">
+                    <div class="spc-icon">🛡️</div>
+                    <h3>Dados Confiáveis</h3>
+                    <p>Informações atualizadas e confiáveis sobre histórico de crédito.</p>
+                </div>
+                <div class="spc-card">
+                    <div class="spc-icon">⚡</div>
+                    <h3>Acesso Restrito</h3>
+                    <p>Área segura para associados acessarem o sistema SPC.</p>
+                </div>
+            </div>
+
+            <div class="spc-cta">
+                <h3>Acessar Sistema SPC</h3>
+                <p>Clique no botão abaixo para acessar a área restrita do SPC. Você precisará de suas credenciais de associado.</p>
+                <button class="btn btn-primary" id="spcBtn">Acessar SPC</button>
+            </div>
+
+            <div class="spc-info">
+                <h4>O que é o SPC?</h4>
+                <p>O SPC (Serviço de Proteção ao Crédito) é uma instituição que mantém informações sobre histórico de crédito de pessoas e empresas. É fundamental para avaliar a capacidade de pagamento e risco de crédito.</p>
+                
+                <h4>Como funciona?</h4>
+                <p>O SPC registra informações sobre débitos, atrasos e histórico de crédito. Essas informações são consultadas por credores para avaliar solicitações de empréstimos e financiamentos.</p>
+                
+                <h4>Informações Disponíveis</h4>
+                <ul>
+                    <li><strong>Histórico de Crédito:</strong> Informações sobre empréstimos e financiamentos anteriores</li>
+                    <li><strong>Débitos:</strong> Contas em atraso ou não pagas</li>
+                    <li><strong>Consultas:</strong> Registro de consultas realizadas por credores</li>
+                    <li><strong>Dados Pessoais:</strong> Informações cadastrais atualizadas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção CCT -->
+    <section id="cct" class="cct">
+        <div class="container">
+            <h2>CCT - Convenção Coletiva de Trabalho</h2>
+            <p class="section-subtitle">Acesse a Convenção Coletiva de Trabalho de Abreu e Lima.</p>
+
+            <div class="cct-content">
+                <div class="cct-info">
+                    <h3>O que é a CCT?</h3>
+                    <p>A Convenção Coletiva de Trabalho (CCT) é um acordo entre sindicatos de trabalhadores e empresas que estabelece direitos e deveres no relacionamento trabalhista. Define salários, jornada, benefícios e outras condições de trabalho.</p>
+                    
+                    <h3>Importância para Associados</h3>
+                    <p>A CDL Abreu e Lima disponibiliza a CCT vigente para que seus associados conheçam as obrigações legais e possam cumprir corretamente as normas trabalhistas.</p>
+                    
+                    <h3>Conteúdo da CCT</h3>
+                    <ul>
+                        <li>Piso salarial e reajustes</li>
+                        <li>Jornada de trabalho</li>
+                        <li>Benefícios e direitos</li>
+                        <li>Férias e licenças</li>
+                        <li>Normas de segurança e saúde</li>
+                        <li>Procedimentos de rescisão</li>
+                    </ul>
+                </div>
+                
+                <div class="cct-download">
+                    <h3>Download da CCT</h3>
+                    <p>Clique no botão abaixo para fazer download do documento da CCT de Abreu e Lima.</p>
+                    <button class="btn btn-primary" id="cctBtn">Baixar CCT (PDF)</button>
+                    <p class="file-info">Documento em PDF - Atualizado em 2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Plano de Saúde -->
+    <section id="plano-saude" class="health-plan">
+        <div class="container">
+            <h2>Plano de Saúde</h2>
+            <p class="section-subtitle">Conheça o plano de saúde especial oferecido aos associados da CDL.</p>
+
+            <div class="health-plan-grid">
+                <div class="health-card">
+                    <div class="health-icon">🏥</div>
+                    <h3>Cobertura Completa</h3>
+                    <p>Cobertura abrangente em hospitais, clínicas e consultórios credenciados.</p>
+                </div>
+                <div class="health-card">
+                    <div class="health-icon">💊</div>
+                    <h3>Medicamentos</h3>
+                    <p>Acesso a medicamentos com descontos especiais em farmácias parceiras.</p>
+                </div>
+                <div class="health-card">
+                    <div class="health-icon">👨‍⚕️</div>
+                    <h3>Especialistas</h3>
+                    <p>Rede ampla de médicos especialistas e profissionais de saúde.</p>
+                </div>
+            </div>
+
+            <div class="health-plan-info">
+                <h3>Benefícios do Plano</h3>
+                <ul>
+                    <li><strong>Cobertura Familiar:</strong> Plano extensível para cônjuge e filhos</li>
+                    <li><strong>Sem Carência:</strong> Acesso imediato a serviços (sujeito a análise)</li>
+                    <li><strong>Rede Credenciada:</strong> Ampla rede de hospitais e clínicas</li>
+                    <li><strong>Atendimento 24h:</strong> Suporte e atendimento em emergências</li>
+                    <li><strong>Preço Especial:</strong> Mensalidade reduzida para associados</li>
+                </ul>
+
+                <h3>Como Contratar</h3>
+                <p>Entre em contato com a CDL para conhecer os planos disponíveis, valores e condições especiais para associados. Nossos consultores estão prontos para ajudar!</p>
+                
+                <div class="health-cta">
+                    <a href="#contato" class="btn btn-primary">Solicitar Informações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Seção Associação -->
+    <section id="associacao" class="association">
+        <div class="container">
+            <h2>Associe-se à CDL Abreu e Lima</h2>
+            <p class="section-subtitle">Preencha o formulário abaixo e receba informações sobre como se associar. Entraremos em contato em breve.</p>
+
+            <div class="form-container">
+                <form id="associationForm" class="association-form">
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+
+                    <!-- Telefone -->
+                    <div class="form-group">
+                        <label for="phone">Telefone *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(81) 9999-9999" required>
+                    </div>
+
+                    <!-- Tipo de Documento e Número -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="documentType">Tipo de Documento *</label>
+                            <select id="documentType" name="documentType" required>
+                                <option value="cpf">CPF</option>
+                                <option value="cnpj">CNPJ</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cpfCnpj">CPF *</label>
+                            <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="000.000.000-00" required>
+                        </div>
+                    </div>
+
+                    <!-- Termo de Aceite -->
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                        <label for="acceptTerms">
+                            Aceito os <button type="button" id="termsBtn" class="link-btn">termos de associação</button> *
+                        </label>
+                    </div>
+
+                    <!-- Mensagem de Erro -->
+                    <div id="formError" class="form-error" style="display: none;"></div>
+
+                    <!-- Botão Enviar -->
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Formulário</button>
+
+                    <p class="form-note">* Campos obrigatórios</p>
+                </form>
+
+                <!-- Mensagem de Sucesso -->
+                <div id="formSuccess" class="form-success" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Formulário Enviado com Sucesso!</h3>
+                    <p>Obrigado por seu interesse. Entraremos em contato em breve com mais informações sobre a associação.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Termos -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeTermsBtn">&times;</button>
+            <h3>Termos de Associação</h3>
+            <div class="modal-body">
+                <p>Ao me associar à CDL Abreu e Lima, declaro estar ciente dos benefícios, responsabilidades e objetivos da entidade. Comprometo-me a participar ativamente das ações promovidas, contribuindo para o fortalecimento do comércio local e para o desenvolvimento econômico de nosso município. Confirmo que todas as informações fornecidas são verdadeiras e autorizo o uso dos meus dados para fins institucionais da entidade.</p>
+            </div>
+            <button class="btn btn-primary btn-block" id="closeTermsBtn2">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Seção Certificado Digital -->
+    <section id="certificado" class="certificate">
+        <div class="container">
+            <h2>Certificado Digital</h2>
+            <p class="section-subtitle">Emita seu certificado digital com segurança e validade legal. Ideal para empresas que precisam de autenticação e assinatura digital.</p>
+
+            <div class="certificate-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">🛡️</div>
+                    <h3>Segurança Garantida</h3>
+                    <p>Autenticação segura e criptografia de dados com padrão internacional.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">📄</div>
+                    <h3>Documentos Válidos</h3>
+                    <p>Assine documentos digitalmente com validade legal garantida.</p>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">✓</div>
+                    <h3>Reconhecimento Legal</h3>
+                    <p>Certificado reconhecido por órgãos públicos e privados no Brasil.</p>
+                </div>
+            </div>
+
+            <div class="certificate-process">
+                <h3>Como Funciona o Processo</h3>
+                <div class="process-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Solicitação</h4>
+                        <p>Faça a solicitação do seu certificado digital através de nossa plataforma.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Validação</h4>
+                        <p>Nossos especialistas validarão seus dados e documentos.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Emissão</h4>
+                        <p>Receba seu certificado digital pronto para uso imediato.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Suporte</h4>
+                        <p>Contamos com suporte técnico para ajudá-lo em qualquer dúvida.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certificate-cta">
+                <h3>Pronto para Emitir seu Certificado Digital?</h3>
+                <p>Entre em contato conosco e saiba mais sobre como obter seu certificado digital com segurança e rapidez.</p>
+                <a href="#contato" class="btn btn-primary">Solicitar Certificado</a>
+            </div>
+
+            <div class="certificate-info">
+                <h4>Informações Importantes</h4>
+                <ul>
+                    <li><strong>Validade:</strong> O certificado digital possui validade de 1 a 3 anos, dependendo do tipo escolhido.</li>
+                    <li><strong>Reconhecimento Legal:</strong> Válido para assinatura de documentos, contratos e transações eletrônicas.</li>
+                    <li><strong>Tipos Disponíveis:</strong> E-CPF (pessoa física) e E-CNPJ (pessoa jurídica).</li>
+                    <li><strong>Suporte Técnico:</strong> Oferecemos suporte completo durante todo o processo de emissão.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    
+               
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sobre -->
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>A CDL Abreu e Lima é uma organização dedicada a impulsionar o crescimento e a inovação do comércio local através de soluções estratégicas e personalizadas.</p>
+                </div>
+
+                <!-- Contato -->
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <strong>Endereço</strong>
+                            <p>Rua Nossa Senhora Aparecida, nº 10, Sala 4<br>Centro - Abreu e Lima, PE<br>CEP: 53625-813</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Telefone</strong>
+                            <p>(81) 3542-1656</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Horário -->
+                <div class="footer-section">
+                    <h3>Horário</h3>
+                    <div class="hours">
+                        <p><strong>Segunda a Sexta</strong><br>08:00 - 17:00</p>
+                        <p class="closed">Sábados e domingos: Fechado</p>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#noticias">Notícias</a></li>
+                        <li><a href="#parceiros">Parceiros</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA Contato -->
+            <div class="footer-cta">
+                <h3>Fale Conosco Agora</h3>
+                <p>Estamos prontos para ajudar seu negócio a crescer</p>
+                <div class="cta-buttons">
+                    <a href="mailto:cdlabreuelima@hotmail.com" class="btn btn-white">📧 E-mail</a>
+                    <a href="https://wa.me/5581988839977" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 CDL Abreu e Lima. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
