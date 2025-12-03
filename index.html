@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CDL Abreu e Lima - Câmara de Dirigentes Lojistas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <!-- Header/Navbar -->
@@ -24,22 +24,22 @@
                     
                     <!-- Dropdown Serviços -->
                     <div class="dropdown">
-                        <button class="dropdown-btn">Serviços</button>
-                        <div class="dropdown-menu">
-                        
-                            <a href="#spc">Consulta SPC</a>
-                            <a href="#cct">CCT</a>
-                            <a href="#plano-saude">Plano de Saúde</a>
-                            <a href="#certificado">Certificado Digital</a>
+                        <button class="dropdown-btn" aria-expanded="false">Serviços</button>
+                        <div class="dropdown-menu" role="menu" aria-hidden="true">
+                            <a href="#spc" role="menuitem">Consulta SPC</a>
+                            <a href="#cct" role="menuitem">CCT</a>
+                            <a href="#plano-saude" role="menuitem">Plano de Saúde</a>
+                            <a href="#certificado" role="menuitem">Certificado Digital</a>
+                            <a href="#documentos" role="menuitem">Documentos</a>
                         </div>
                     </div>
                 </nav>
 
                 <!-- CTA Button Desktop -->
-                <button class="btn btn-primary">Fale Conosco</button>
+                <a href="https://wa.me/558188839977" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
 
                 <!-- Menu Mobile Toggle -->
-                <button class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -47,7 +47,7 @@
             </div>
 
             <!-- Menu Mobile -->
-            <nav class="nav-mobile" id="navMobile">
+            <nav class="nav-mobile" id="navMobile" aria-hidden="true">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#solucoes" class="nav-link">Soluções</a>
                 <a href="#noticias" class="nav-link">Notícias</a>
@@ -55,17 +55,18 @@
                 
                 <!-- Dropdown Mobile -->
                 <div class="dropdown-mobile">
-                    <button class="dropdown-btn-mobile" id="dropdownToggle">Serviços</button>
-                    <div class="dropdown-menu-mobile" id="dropdownMenu">
+                    <button class="dropdown-btn-mobile" id="dropdownToggle" aria-expanded="false">Serviços</button>
+                    <div class="dropdown-menu-mobile" id="dropdownMenu" aria-hidden="true">
                         <a href="#serasa">Consulta Serasa</a>
                         <a href="#spc">Consulta SPC</a>
                         <a href="#cct">CCT</a>
                         <a href="#plano-saude">Plano de Saúde</a>
                         <a href="#certificado">Certificado Digital</a>
+                        <a href="#documentos">Documentos</a>
                     </div>
                 </div>
 
-                <button class="btn btn-primary btn-block">Fale Conosco</button>
+                <a href="https://wa.me/558188839977" class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
             </nav>
         </div>
     </header>
@@ -120,11 +121,11 @@
             <button class="carousel-btn carousel-next" id="nextBtn" aria-label="Próximo slide">❯</button>
 
             <!-- Indicadores -->
-            <div class="carousel-indicators">
-                <button class="indicator active" data-slide="0"></button>
-                <button class="indicator" data-slide="1"></button>
-                <button class="indicator" data-slide="2"></button>
-                <button class="indicator" data-slide="3"></button>
+            <div class="carousel-indicators" role="tablist">
+                <button class="indicator active" data-slide="0" aria-label="Slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Slide 4"></button>
             </div>
         </div>
     </section>
@@ -136,20 +137,17 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>A CDL Abreu e Lima</h3>
-                    <p>A Câmara de Dirigentes Lojistas (CDL) de Abreu e Lima é uma organização dedicada ao fortalecimento do comércio local e ao desenvolvimento econômico do município. Desde sua fundação, atuamos como intermediária entre o setor comercial, a comunidade e as autoridades públicas.</p>
-                    
+                    <p>A Câmara de Dirigentes Lojistas (CDL) de Abreu e Lima é uma organização dedicada ao fortalecimento do comércio local e ao desenvolvimento econômico do município.</p>
                     <h4>Nossa Missão</h4>
                     <p>Fortalecer o comércio local através de soluções estratégicas, parcerias e representação dos interesses dos lojistas junto aos órgãos públicos.</p>
-                    
                     <h4>Nossa Visão</h4>
                     <p>Ser a principal referência em apoio ao comércio de Abreu e Lima, promovendo crescimento sustentável e prosperidade econômica.</p>
-                    
                     <h4>Nossos Valores</h4>
                     <ul>
-                        <li><strong>Integridade:</strong> Agir com ética e transparência em todas as ações</li>
-                        <li><strong>Comprometimento:</strong> Dedicação total ao desenvolvimento do comércio local</li>
-                        <li><strong>Inovação:</strong> Buscar constantemente novas soluções e oportunidades</li>
-                        <li><strong>Colaboração:</strong> Trabalhar em conjunto com parceiros e associados</li>
+                        <li><strong>Integridade:</strong> Agir com ética e transparência</li>
+                        <li><strong>Comprometimento:</strong> Dedicação ao comércio local</li>
+                        <li><strong>Inovação:</strong> Buscar novas soluções</li>
+                        <li><strong>Colaboração:</strong> Trabalhar junto aos associados</li>
                     </ul>
                 </div>
             </div>
@@ -161,13 +159,21 @@
         <div class="container">
             <h2>Presidente</h2>
             <div class="president-card">
+                <div class="president-photo">
+                    <img src="img/presidente.jpeg" alt="Foto do Presidente Evandro Alves de Lima">
+                </div>
+
                 <div class="president-info">
                     <h3>Evandro Alves de Lima</h3>
                     <p class="position">Presidente da CDL Abreu e Lima</p>
-                    <p class="bio">Evandro Alves de Lima é um empresário experiente e dedicado ao desenvolvimento do comércio local. Com uma trajetória de sucesso no setor, lidera a CDL com visão estratégica e comprometimento com os associados.</p>
+                    <p class="bio">
+                        Evandro Alves de Lima é um empresário experiente e dedicado ao desenvolvimento do comércio local.
+                        Com forte atuação no comércio, lidera a CDL com visão moderna e compromisso social.
+                    </p>
+
                     <div class="contact-cta">
-                        <p>Entre em contato para agendar uma reunião</p>
-                        <a href="#contato" class="btn btn-primary">Fale com o Presidente</a>
+                        <p>Entre em contato para mais informações</p>
+                        <a href="https://wa.me/558188839977" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Fale Conosco</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +185,6 @@
         <div class="container">
             <h2>Benefícios de Ser Associado</h2>
             <p class="section-subtitle">Conheça as vantagens exclusivas de fazer parte da CDL Abreu e Lima.</p>
-            
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">🤝</div>
@@ -220,49 +225,37 @@
         <div class="container">
             <h2>Nossas Soluções</h2>
             <p class="section-subtitle">Oferecemos um portfólio completo de serviços para impulsionar o crescimento e a sustentabilidade do seu negócio.</p>
-
             <div class="solutions-grid">
-                <!-- Card 1 -->
                 <div class="solution-card">
                     <div class="solution-icon">📊</div>
                     <h3>Consultoria Empresarial</h3>
                     <p>Orientação estratégica para otimizar processos e aumentar a rentabilidade do seu negócio.</p>
                     <a href="#" class="link">Saiba Mais →</a>
                 </div>
-
-                <!-- Card 2 -->
                 <div class="solution-card">
                     <div class="solution-icon">📈</div>
                     <h3>Desenvolvimento de Mercado</h3>
                     <p>Estratégias de expansão e posicionamento para conquistar novos mercados.</p>
                     <a href="#" class="link">Saiba Mais →</a>
                 </div>
-
-                <!-- Card 3 -->
                 <div class="solution-card">
                     <div class="solution-icon">👥</div>
                     <h3>Gestão de Pessoas</h3>
                     <p>Programas de desenvolvimento e retenção de talentos para sua equipe.</p>
                     <a href="#" class="link">Saiba Mais →</a>
                 </div>
-
-                <!-- Card 4 -->
                 <div class="solution-card">
                     <div class="solution-icon">💻</div>
                     <h3>Transformação Digital</h3>
                     <p>Implementação de tecnologias para modernizar e automatizar operações.</p>
                     <a href="#" class="link">Saiba Mais →</a>
                 </div>
-
-                <!-- Card 5 -->
                 <div class="solution-card">
                     <div class="solution-icon">📉</div>
                     <h3>Análise de Dados</h3>
                     <p>Insights baseados em dados para tomadas de decisão mais assertivas.</p>
                     <a href="#" class="link">Saiba Mais →</a>
                 </div>
-
-                <!-- Card 6 -->
                 <div class="solution-card">
                     <div class="solution-icon">🔒</div>
                     <h3>Conformidade e Segurança</h3>
@@ -278,9 +271,7 @@
         <div class="container">
             <h2>Notícias e Artigos</h2>
             <p class="section-subtitle">Fique atualizado com as últimas novidades, tendências e insights do mercado.</p>
-
             <div class="news-grid">
-                <!-- Card 1 -->
                 <div class="news-card">
                     <img src="img/placeholder-news-1.jpg" alt="Tendências de Inovação para 2025">
                     <div class="news-content">
@@ -290,8 +281,6 @@
                         <a href="#" class="btn btn-small">Ler Mais</a>
                     </div>
                 </div>
-
-                <!-- Card 2 -->
                 <div class="news-card">
                     <img src="img/placeholder-news-2.jpg" alt="Sustentabilidade nos Negócios">
                     <div class="news-content">
@@ -301,8 +290,6 @@
                         <a href="#" class="btn btn-small">Ler Mais</a>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
                 <div class="news-card">
                     <img src="img/placeholder-news-3.jpg" alt="Transformação Digital: Guia Prático">
                     <div class="news-content">
@@ -372,28 +359,6 @@
                     <p>Área segura para associados acessarem o sistema SPC.</p>
                 </div>
             </div>
-
-            <div class="spc-cta">
-                <h3>Acessar Sistema SPC</h3>
-                <p>Clique no botão abaixo para acessar a área restrita do SPC. Você precisará de suas credenciais de associado.</p>
-                <button class="btn btn-primary" id="spcBtn">Acessar SPC</button>
-            </div>
-
-            <div class="spc-info">
-                <h4>O que é o SPC?</h4>
-                <p>O SPC (Serviço de Proteção ao Crédito) é uma instituição que mantém informações sobre histórico de crédito de pessoas e empresas. É fundamental para avaliar a capacidade de pagamento e risco de crédito.</p>
-                
-                <h4>Como funciona?</h4>
-                <p>O SPC registra informações sobre débitos, atrasos e histórico de crédito. Essas informações são consultadas por credores para avaliar solicitações de empréstimos e financiamentos.</p>
-                
-                <h4>Informações Disponíveis</h4>
-                <ul>
-                    <li><strong>Histórico de Crédito:</strong> Informações sobre empréstimos e financiamentos anteriores</li>
-                    <li><strong>Débitos:</strong> Contas em atraso ou não pagas</li>
-                    <li><strong>Consultas:</strong> Registro de consultas realizadas por credores</li>
-                    <li><strong>Dados Pessoais:</strong> Informações cadastrais atualizadas</li>
-                </ul>
-            </div>
         </div>
     </section>
 
@@ -406,11 +371,11 @@
             <div class="cct-content">
                 <div class="cct-info">
                     <h3>O que é a CCT?</h3>
-                    <p>A Convenção Coletiva de Trabalho (CCT) é um acordo entre sindicatos de trabalhadores e empresas que estabelece direitos e deveres no relacionamento trabalhista. Define salários, jornada, benefícios e outras condições de trabalho.</p>
-                    
+                    <p>A Convenção Coletiva de Trabalho (CCT) é um acordo entre sindicatos de trabalhadores e empresas que estabelece direitos e deveres no relacionamento trabalhista.</p>
+
                     <h3>Importância para Associados</h3>
-                    <p>A CDL Abreu e Lima disponibiliza a CCT vigente para que seus associados conheçam as obrigações legais e possam cumprir corretamente as normas trabalhistas.</p>
-                    
+                    <p>A CDL Abreu e Lima disponibiliza a CCT vigente para que seus associados conheçam as obrigações legais.</p>
+
                     <h3>Conteúdo da CCT</h3>
                     <ul>
                         <li>Piso salarial e reajustes</li>
@@ -421,11 +386,12 @@
                         <li>Procedimentos de rescisão</li>
                     </ul>
                 </div>
-                
+
                 <div class="cct-download">
                     <h3>Download da CCT</h3>
                     <p>Clique no botão abaixo para fazer download do documento da CCT de Abreu e Lima.</p>
-                    <button class="btn btn-primary" id="cctBtn">Baixar CCT (PDF)</button>
+                    <!-- Se você tiver o arquivo: coloque-o na raiz e ajuste o nome -->
+                    <a href="contrato-filiacao.pdf" download class="btn btn-primary">Baixar CCT (PDF)</a>
                     <p class="file-info">Documento em PDF - Atualizado em 2025</p>
                 </div>
             </div>
@@ -467,16 +433,13 @@
                 </ul>
 
                 <h3>Como Contratar</h3>
-                <p>Entre em contato com a CDL para conhecer os planos disponíveis, valores e condições especiais para associados. Nossos consultores estão prontos para ajudar!</p>
-                
+                <p>Entre em contato com a CDL para conhecer os planos disponíveis, valores e condições especiais para associados.</p>
                 <div class="health-cta">
                     <a href="#contato" class="btn btn-primary">Solicitar Informações</a>
                 </div>
             </div>
         </div>
     </section>
-
-  
 
     <!-- Seção Associação -->
     <section id="associacao" class="association">
@@ -485,26 +448,22 @@
             <p class="section-subtitle">Preencha o formulário abaixo e receba informações sobre como se associar. Entraremos em contato em breve.</p>
 
             <div class="form-container">
-                <form id="associationForm" class="association-form">
-                    <!-- Nome -->
+                <form id="associationForm" class="association-form" novalidate>
                     <div class="form-group">
                         <label for="name">Nome Completo *</label>
                         <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
                     </div>
 
-                    <!-- Email -->
                     <div class="form-group">
                         <label for="email">E-mail *</label>
                         <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
                     </div>
 
-                    <!-- Telefone -->
                     <div class="form-group">
                         <label for="phone">Telefone *</label>
                         <input type="tel" id="phone" name="phone" placeholder="(81) 9999-9999" required>
                     </div>
 
-                    <!-- Tipo de Documento e Número -->
                     <div class="form-row">
                         <div class="form-group">
                             <label for="documentType">Tipo de Documento *</label>
@@ -514,12 +473,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="cpfCnpj">CPF *</label>
+                            <label for="cpfCnpj">CPF / CNPJ *</label>
                             <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="000.000.000-00" required>
                         </div>
                     </div>
 
-                    <!-- Termo de Aceite -->
                     <div class="form-group checkbox-group">
                         <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
                         <label for="acceptTerms">
@@ -527,17 +485,12 @@
                         </label>
                     </div>
 
-                    <!-- Mensagem de Erro -->
-                    <div id="formError" class="form-error" style="display: none;"></div>
-
-                    <!-- Botão Enviar -->
+                    <div id="formError" class="form-error" style="display:none;"></div>
                     <button type="submit" class="btn btn-primary btn-block">Enviar Formulário</button>
-
                     <p class="form-note">* Campos obrigatórios</p>
                 </form>
 
-                <!-- Mensagem de Sucesso -->
-                <div id="formSuccess" class="form-success" style="display: none;">
+                <div id="formSuccess" class="form-success" style="display:none;">
                     <div class="success-icon">✓</div>
                     <h3>Formulário Enviado com Sucesso!</h3>
                     <p>Obrigado por seu interesse. Entraremos em contato em breve com mais informações sobre a associação.</p>
@@ -547,9 +500,9 @@
     </section>
 
     <!-- Modal Termos -->
-    <div id="termsModal" class="modal">
+    <div id="termsModal" class="modal" aria-hidden="true">
         <div class="modal-content">
-            <button class="modal-close" id="closeTermsBtn">&times;</button>
+            <button class="modal-close" id="closeTermsBtn" aria-label="Fechar">&times;</button>
             <h3>Termos de Associação</h3>
             <div class="modal-body">
                 <p>Ao me associar à CDL Abreu e Lima, declaro estar ciente dos benefícios, responsabilidades e objetivos da entidade. Comprometo-me a participar ativamente das ações promovidas, contribuindo para o fortalecimento do comércio local e para o desenvolvimento econômico de nosso município. Confirmo que todas as informações fornecidas são verdadeiras e autorizo o uso dos meus dados para fins institucionais da entidade.</p>
@@ -611,25 +564,28 @@
             <div class="certificate-cta">
                 <h3>Pronto para Emitir seu Certificado Digital?</h3>
                 <p>Entre em contato conosco e saiba mais sobre como obter seu certificado digital com segurança e rapidez.</p>
-                <a href="#contato" class="btn btn-primary">Solicitar Certificado</a>
-            </div>
-
-            <div class="certificate-info">
-                <h4>Informações Importantes</h4>
-                <ul>
-                    <li><strong>Validade:</strong> O certificado digital possui validade de 1 a 3 anos, dependendo do tipo escolhido.</li>
-                    <li><strong>Reconhecimento Legal:</strong> Válido para assinatura de documentos, contratos e transações eletrônicas.</li>
-                    <li><strong>Tipos Disponíveis:</strong> E-CPF (pessoa física) e E-CNPJ (pessoa jurídica).</li>
-                    <li><strong>Suporte Técnico:</strong> Oferecemos suporte completo durante todo o processo de emissão.</li>
-                </ul>
+                <a href="https://wa.me/558188839977" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Solicitar Certificado</a>
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    
-               
+    <!-- Seção Documentos (Download do Contrato de Filiação) -->
+    <section id="documentos" class="documents">
+        <div class="container">
+            <h2>Documentos Importantes</h2>
+            <p class="section-subtitle">Baixe o contrato oficial de filiação da CDL Abreu e Lima.</p>
 
+            <div class="doc-card">
+                <div class="doc-icon">📄</div>
+                <h3>Contrato de Filiação</h3>
+                <p>Documento oficial para associação à CDL Abreu e Lima.</p>
+
+                <!-- arquivo na raiz: contrato-filiacao.pdf -->
+                <a href="contrato-filiacao.pdf" download class="btn btn-primary">Baixar Contrato (PDF)</a>
+                <p class="file-info">Formato PDF — 2 páginas</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer">
@@ -647,11 +603,15 @@
                     <div class="contact-info">
                         <div class="info-item">
                             <strong>Endereço</strong>
-                            <p>Rua Nossa Senhora Aparecida, nº 10, Sala 4<br>Centro - Abreu e Lima, PE<br>CEP:  53510-080</p>
+                            <p>Rua Nossa Senhora Aparecida, nº 10, Sala 4<br>Centro - Abreu e Lima, PE<br>CEP: 53510-080</p>
                         </div>
                         <div class="info-item">
-                            <strong>Telefone</strong>
-                            <p>(81) 3542-1656</p>
+                            <strong>WhatsApp</strong>
+                            <p><a href="https://wa.me/558188839977" target="_blank" rel="noopener noreferrer">(81) 8883-9977</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>E-mail</strong>
+                            <p><a href="mailto:cdlabreuelima@hotmail.com">cdlabreuelima@hotmail.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -672,7 +632,7 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#solucoes">Soluções</a></li>
                         <li><a href="#noticias">Notícias</a></li>
-                        <li><a href="#parceiros">Parceiros</a></li>
+                        <li><a href="#documentos">Documentos</a></li>
                     </ul>
                 </div>
             </div>
@@ -683,7 +643,7 @@
                 <p>Estamos prontos para ajudar seu negócio a crescer</p>
                 <div class="cta-buttons">
                     <a href="mailto:cdlabreuelima@hotmail.com" class="btn btn-white">📧 E-mail</a>
-                    <a href="https://wa.me/5581988839977" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 WhatsApp</a>
+                    <a href="https://wa.me/558188839977" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">💬 WhatsApp</a>
                 </div>
             </div>
 
