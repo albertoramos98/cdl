@@ -1889,3 +1889,14 @@ a.btn:focus, button:focus {
     .partner-logo { height: 90px; }
     .certificate-card { padding: 16px; }
 }
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+}
+
+.logo-img {
+    height: 70px;
+}
+
