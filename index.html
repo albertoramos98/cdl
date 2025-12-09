@@ -318,23 +318,15 @@
 
             <div class="partners-grid">
                 <div class="partner-logo">
-                    <img src="img/placeholder-partner-1.png" alt="Parceiro 1">
+                    <img src="img/sicoob-logo.png" alt="Parceiro 1">
                 </div>
                 <div class="partner-logo">
-                    <img src="img/placeholder-partner-2.png" alt="Parceiro 2">
+                    <img src="img/sindnorte.jpeg" alt="Parceiro 2">
                 </div>
                 <div class="partner-logo">
-                    <img src="img/placeholder-partner-3.png" alt="Parceiro 3">
+                    <img src="img/evamar.jpeg" alt="Parceiro 3">
                 </div>
-                <div class="partner-logo">
-                    <img src="img/placeholder-partner-4.png" alt="Parceiro 4">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/placeholder-partner-5.png" alt="Parceiro 5">
-                </div>
-                <div class="partner-logo">
-                    <img src="img/placeholder-partner-6.png" alt="Parceiro 6">
-                </div>
+              
             </div>
         </div>
     </section>
@@ -444,63 +436,79 @@
         </div>
     </section>
 
-    <!-- Seção Associação -->
-    <section id="associacao" class="association">
-        <div class="container">
-            <h2>Associe-se à CDL Abreu e Lima</h2>
-            <p class="section-subtitle">Preencha o formulário abaixo e receba informações sobre como se associar. Entraremos em contato em breve.</p>
+<!-- Seção Associação -->
+<section id="associacao" class="association">
+    <div class="container">
+        <h2>Associe-se à CDL Abreu e Lima</h2>
+        <p class="section-subtitle">Preencha o formulário abaixo e receba informações sobre como se associar. Entraremos em contato em breve.</p>
 
-            <div class="form-container">
-                <form id="associationForm" class="association-form" novalidate>
-                    <div class="form-group">
-                        <label for="name">Nome Completo *</label>
-                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
-                    </div>
+        <div class="form-container">
+            <!-- form com FormSubmit (não altera classes/ids) -->
+            <form 
+                id="associationForm" 
+                class="association-form" 
+                action="https://formsubmit.co/cdlabreuelima@hotmail.com" 
+                method="POST"
+                novalidate>
 
-                    <div class="form-group">
-                        <label for="email">E-mail *</label>
-                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
-                    </div>
+                <!-- campos necessários do FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Se quiser redirecionar para uma página "obrigado", coloque a URL; 
+                     se preferir permanecer na mesma página, deixe a URL da página atual. -->
+                <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
 
-                    <div class="form-group">
-                        <label for="phone">Telefone *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(81) 9999-9999" required>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="documentType">Tipo de Documento *</label>
-                            <select id="documentType" name="documentType" required>
-                                <option value="cpf">CPF</option>
-                                <option value="cnpj">CNPJ</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="cpfCnpj">CPF / CNPJ *</label>
-                            <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="000.000.000-00" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
-                        <label for="acceptTerms">
-                            Aceito os <button type="button" id="termsBtn" class="link-btn">termos de associação</button> *
-                        </label>
-                    </div>
-
-                    <div id="formError" class="form-error" style="display:none;"></div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Formulário</button>
-                    <p class="form-note">* Campos obrigatórios</p>
-                </form>
-
-                <div id="formSuccess" class="form-success" style="display:none;">
-                    <div class="success-icon">✓</div>
-                    <h3>Formulário Enviado com Sucesso!</h3>
-                    <p>Obrigado por seu interesse. Entraremos em contato em breve com mais informações sobre a associação.</p>
+                <div class="form-group">
+                    <label for="name">Nome Completo *</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(81) 9999-9999" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="documentType">Tipo de Documento *</label>
+                        <select id="documentType" name="documentType" required>
+                            <option value="cpf">CPF</option>
+                            <option value="cnpj">CNPJ</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpfCnpj">CPF / CNPJ *</label>
+                        <input type="text" id="cpfCnpj" name="cpfCnpj" placeholder="000.000.000-00" required>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                    <label for="acceptTerms">
+                        Aceito os <button type="button" id="termsBtn" class="link-btn">termos de associação</button> *
+                    </label>
+                </div>
+
+                <div id="formError" class="form-error" style="display:none;"></div>
+
+                <button type="submit" class="btn btn-primary btn-block">Enviar Formulário</button>
+                <p class="form-note">* Campos obrigatórios</p>
+            </form>
+
+            <!-- mantenho aqui a sua área de sucesso sem mexer no estilo -->
+            <div id="formSuccess" class="form-success" style="display:none;">
+                <div class="success-icon">✓</div>
+                <h3>Formulário Enviado com Sucesso!</h3>
+                <p>Obrigado por seu interesse. Entraremos em contato em breve com mais informações sobre a associação.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Modal Termos -->
     <div id="termsModal" class="modal" aria-hidden="true">
